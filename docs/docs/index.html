@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Guide | InfyCRM</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.css">
+    <link rel="stylesheet" href="../css/circular-std-font-face.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.2/js/lightgallery.js"></script>
+    <meta name="description"
+          content="Manage your projects at one place. Generate reports and invoices from the tasks of specific projects.">
+
+    <link rel="preload" href="../assets/css/0.styles.54b2f85a.css" as="style">
+    <link rel="preload" href="../js/styles.js" as="script">
+    <link rel="preload" href="../js/1.js" as="script">
+    <link rel="preload" href="../js/2.js" as="script">
+    <link rel="preload" href="../js/10.js" as="script">
+    <link rel="prefetch" href="../js/11.js">
+    <link rel="prefetch" href="../js/12.js">
+    <link rel="prefetch" href="../js/3.js">
+    <link rel="prefetch" href="../js/4.js">
+    <link rel="prefetch" href="../js/5.js">
+    <link rel="prefetch" href="../js/6.js">
+    <link rel="prefetch" href="../js/7.js">
+    <link rel="prefetch" href="../js/8.js">
+    <link rel="prefetch" href="../js/9.js">
+    <link rel="stylesheet" href="../assets/css/0.styles.54b2f85a.css">
+</head>
+<body>
+    
+<div id="app" data-server-rendered="true">
+    <div class="theme-container">
+        <header class="navbar">
+            <div class="sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"
+                     class="icon">
+                    <path fill="currentColor"
+                          d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path>
+                </svg>
+            </div>
+            <a href="../index.html" class="home-link router-link-active"><img src="../images/logo.png" alt="InfyCRM"
+                                                                              class="logo"> <span
+                    class="site-name can-hide">Afrel</span></a>
+            <div class="links"><!---->
+                <nav class="nav-links can-hide">
+                    <div class="nav-item"><a href="../index.html" class="nav-link">
+                        Home
+                    </a></div>
+                    <div class="nav-item"><a href="../docs/index.html" aria-current="page"
+                                             class="nav-link router-link-exact-active router-link-active">
+                        Docs
+                    </a></div>
+                    <div class="nav-item"><a href="../releases/index.html" class="nav-link">
+                        Releases
+                    </a></div>
+                    <div class="nav-item"><a href="../upgrade/index.html" class="nav-link">
+                        Upgrade Guide
+                    </a></div> <!----></nav>
+            </div>
+        </header>
+        <div class="sidebar-mask"></div>
+        <aside class="sidebar">
+            <nav class="nav-links">
+                <div class="nav-item"><a href="/" class="nav-link">
+                    Home
+                </a></div>
+                <div class="nav-item"><a href="/docs/" aria-current="page"
+                                         class="nav-link router-link-exact-active router-link-active">
+                    Docs
+                </a></div>
+                <div class="nav-item"><a href="/releases/" class="nav-link">
+                    Releases
+                </a></div>
+                <div class="nav-item"><a href="/upgrade/" class="nav-link">
+                    Upgrade Guide
+                </a></div> <!----></nav>
+            <ul class="sidebar-links">
+                <li>
+                    <section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!---->
+                    </p>
+                        <ul class="sidebar-links sidebar-group-items">
+                            <li><a href="#technologies-used" class="sidebar-link">Technologies Used</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#installation-guide" class="sidebar-link">Installation Guide</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header"><a href="#system-requirements"
+                                                                      class="sidebar-link">System Requirements</a></li>
+                                    <li class="sidebar-sub-header"><a href="#setup-infycrm" class="sidebar-link">Setup
+                                        InfyCRM</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_1-copy-files-to-a-web-server"
+                                                                      class="sidebar-link">1. Copy files to a web
+                                        server</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_2-setup-default-database"
+                                                                      class="sidebar-link">2. Setup Default Database</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#_3-setup-environment-env-file"
+                                                                      class="sidebar-link">3. Setup environment .env
+                                        file</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_4-admin-login" class="sidebar-link">4.
+                                        Admin login</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#setup-infycrm-into-local-environment" class="sidebar-link">Setup InfyCRM
+                                into Local Environment</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header"><a
+                                            href="#_1-install-xampp-wamp-if-you-don-t-have-it"
+                                            class="sidebar-link">1. Install xampp/wamp (if you don't have it).</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_2-create-folder-infycrm"
+                                                                      class="sidebar-link">2. Create folder InfyCRM</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#_3-unzip-dist-zip-to-infycrm-folder"
+                                                                      class="sidebar-link">3. Unzip dist.zip to InfyCRM
+                                        folder</a></li>
+                                    <li class="sidebar-sub-header"><a
+                                            href="#_4-point-the-domain-to-the-uploaded-folder"
+                                            class="sidebar-link">4. Point the domain to the uploaded folder</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#multi-languages-support" class="sidebar-link">Multi-languages
+                                Support</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#admin-panel" class="sidebar-link">Admin Panel</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header"><a href="#dashboard" class="sidebar-link">Dashboard</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#customers" class="sidebar-link">Customers</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#members"
+                                                                      class="sidebar-link">Members</a></li>
+                                    <li class="sidebar-sub-header"><a href="#articles" class="sidebar-link">Articles</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#tags" class="sidebar-link">Tags</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#leads" class="sidebar-link">Leads</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#projects" class="sidebar-link">Projects</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#tasks" class="sidebar-link">Tasks</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#tickets"
+                                                                      class="sidebar-link">Tickets</a></li>
+                                    <li class="sidebar-sub-header"><a href="#invoices" class="sidebar-link">Invoices</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#credit-notes" class="sidebar-link">Credit
+                                        Notes</a></li>
+                                    <li class="sidebar-sub-header"><a href="#proposals" class="sidebar-link">Proposals</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#estimates" class="sidebar-link">Estimates</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#invoice-payments"
+                                                                      class="sidebar-link">Invoice Payments</a></li>
+                                    <li class="sidebar-sub-header"><a href="#departments" class="sidebar-link">Departments</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#expenses" class="sidebar-link">Expenses</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#payment-modes" class="sidebar-link">Payment
+                                        Modes</a></li>
+                                    <li class="sidebar-sub-header"><a href="#tax-rates" class="sidebar-link">Tax
+                                        Rates</a></li>
+                                    <li class="sidebar-sub-header"><a href="#products" class="sidebar-link">Products</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#announcements" class="sidebar-link">Announcements</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#contracts" class="sidebar-link">Contracts</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#goals" class="sidebar-link">Goals</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#services" class="sidebar-link">Services</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#settings" class="sidebar-link">Settings</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#client-panel" class="sidebar-link">Client panel</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header"><a href="#dashboard-2" class="sidebar-link">Dashboard</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#invoices-2" class="sidebar-link">Invoices</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#proposals-2" class="sidebar-link">Proposals</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#contracts-2" class="sidebar-link">Contracts</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#estimates-2" class="sidebar-link">Estimates</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#announcements-2"
+                                                                      class="sidebar-link">Announcements</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </li>
+            </ul>
+        </aside>
+        <main class="page">
+            <div class="theme-default-content content__default"><h1 id="guide"><a href="#guide"
+                                                                                  class="header-anchor">#</a> Guide</h1>
+                <p>The goal of InfyCRM is to manage &amp; digitize the relationship of your customers with your
+                    business. InfyCRM is a perfect solution to manage your Customers, Contracts, Projects, Products,
+                    Leads, Invoices, and much more.</p>
+                <h2 id="technologies-used"><a href="#technologies-used" class="header-anchor">#</a> Technologies Used
+                </h2>
+                <p>This system uses multiple technologies to give the best possible experience.</p>
+                <ul>
+                    <li>PHP with Laravel Framework 7.0</li>
+                    <li>MySQL 5.6+</li>
+                    <li>jQuery</li>
+                    <li>Ajax</li>
+                </ul>
+                <h2 id="installation-guide"><a href="#installation-guide" class="header-anchor">#</a> Installation Guide
+                </h2>
+                <p>We tried our best to make the installation of InfyCRM as easy as possible.</p>
+                <h3 id="system-requirements"><a href="#system-requirements" class="header-anchor">#</a> System
+                    Requirements</h3>
+                <p>It's assumed that you have primary knowledge of web hosting application installation knowledge since
+                    this application is built on Laravel with JS.</p>
+                <p>You can read about laravel Requirements <a href="https://laravel.com/docs/7.x#server-requirements"
+                                                              target="_blank" rel="noopener noreferrer">here<span><svg
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                        viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor"
+                                                                                                 d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
+                        fill="currentColor"
+                        points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span
+                        class="sr-only">(opens new window)</span></span></a></p>
+                <p>Optional: You can also update the below variables in the php.ini file if you want to upload bigger
+                    files.</p>
+                <ul>
+                    <li>upload_max_filesize = 50M</li>
+                    <li>max_file_uploads = 50</li>
+                    <li>post_max_size = 100M</li>
+                </ul>
+                <h3 id="setup-infycrm-system"><a href="#setup-infycrm-system" class="header-anchor">#</a> Setup InfyCRM
+                    System</h3>
+                <p>If you have purchased the InfyCRM then you will be able to find the zip named <code>dist.zip</code>
+                    in the main download file.</p>
+                <p>If you want to set up InfyCRM in your local environment then you can jump <a
+                        href="#setup-infycrm-into-local-environment">here</a>.</p>
+                <p>Now if you want to setup InfyCRM on your server then you can directly copy the dist.zip folder to
+                    your webroot directory on the server and the following steps:</p>
+                <h3 id="_1-copy-files-to-a-web-server"><a href="#_1-copy-files-to-a-web-server"
+                                                          class="header-anchor">#</a> 1. Copy files to a web server</h3>
+                <p>Upload dist.zip to your web server's root (public_html) and extract it there.</p>
+                <h3 id="_2-setup-default-database"><a href="#_2-setup-default-database" class="header-anchor">#</a> 2.
+                    Setup Default Database</h3>
+                <ol>
+                    <li>Open PHPMyAdmin on your server and do a login.</li>
+                </ol>
+                <p><img src="../images/docs-images/db1.png" alt="Setup Default DB"></p>
+                <ol start="2">
+                    <li>Click on the Databases tab.</li>
+                </ol>
+                <p><img src="../images/docs-images/db2.png" alt="Setup Default DB"></p>
+                <ol start="3">
+                    <li>Create a new database and specify a Database name of your choice and click the Create button.
+                    </li>
+                </ol>
+                <p><img src="../images/docs-images/db3.png" alt="Setup Default DB"></p>
+                <ol start="4">
+                    <li><p>Now on the left, select the database (infy_crm) OR the one that you have created.</p></li>
+                    <li><p>Click Import in the top menu</p></li>
+                </ol>
+                <p><img src="../images/docs-images/db4.png" alt="Setup Default DB"></p>
+                <ol start="6">
+                    <li>Under Import, choose the default Database file from dist/database/infy_crm.sql and click the
+                        button Go.
+                    </li>
+                </ol>
+                <p><img src="../images/docs-images/db5.png" alt="Setup Default DB"></p>
+                <h3 id="_3-setup-environment-env-file"><a href="#_3-setup-environment-env-file"
+                                                          class="header-anchor">#</a> 3. Setup environment .env file
+                </h3>
+                <ol>
+                    <li>Open .env file from your server's root folder.</li>
+                </ol>
+                <p><img src="../images/docs-images/setup.jpg" alt="Setup Default DB"></p>
+                <ol start="2">
+                    <li>Update your .env file</li>
+                </ol>
+                <p>You need to change the following information into your environment (.env) file.</p>
+                <p>Make sure your app name is wrapped between Quotes (&quot;APP NAME&quot;).</p>
+                <div class="language- extra-class"><pre><code>- APP_NAME - Name of your Application
+- APP_URL - Change this URL with your server URL (including trailing path if you are putting it in a subfolder or root website)
+- DB_HOST - Put your database hostname here
+- DB_PORT - Put your database port here if it does not default to 3306
+- DB_DATABASE - Change it to your database name
+- DB_USERNAME - Name of your database user
+- DB_PASSWORD - Password of your database user
+</code></pre>
+                </div>
+                <p>You will also need to set up mail configuration, you can read more about it here for that setup based
+                    on the mail service that you use.</p>
+                <div class="language- extra-class"><pre><code>- MAIL_DRIVER 
+- MAIL_HOST
+- MAIL_PORT
+- MAIL_USERNAME
+- MAIL_PASSWORD
+- MAIL_ENCRYPTION
+- MAIL_FROM_ADDRESS 
+- MAIL_FROM_NAME
+</code></pre>
+                </div>
+                <p>If you want to store your files to direct your <code>s3</code> bucket then you have to use the
+                    following <code>.env</code> variables.
+                    You need to change <code>FILESYSTEM_DRIVER</code> and <code>MEDIA_DISK</code> value to
+                    <code>s3</code> when you are using AWS file storage.</p>
+                <div class="language- extra-class"><pre><code>- AWS_ACCESS_KEY_ID=
+- AWS_SECRET_ACCESS_KEY=
+- AWS_DEFAULT_REGION=us-east-1
+- AWS_BUCKET=
+- AWS_ENDPOINT=
+- AWS_URL=
+</code></pre>
+                </div>
+                <p>Or you can use your choice of storage driver to store your media assets if you want. All of your
+                    attachments will be placed into that.</p>
+                <p>Set Stripe configuration it is using while invoice payments. Here are some links by using it you will get an idea about how to generate stripe API keys.</p>
+                <ul>
+                    <li>
+                        <a href="https://support.stripe.com/questions/locate-api-keys-in-the-dashboard"
+                           target="_blank" rel="noopener noreferrer">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="https://help.sharetribe.com/en/articles/1055989-how-to-configure-your-stripe-account-and-get-api-keys-for-your-marketplace
+"
+                           target="_blank" rel="noopener noreferrer">Link 2</a>
+                    </li>
+                </ul>
+                <div class="language- extra-class"><pre><code>- STRIPE_KEY=
+- STRIPE_SECRET_KEY=
+- STRIPE_WEBHOOK_SECRET_KEY=
+</code></pre>
+                </div>
+                <h3 id="_4-admin-login"><a href="#_4-admin-login" class="header-anchor">#</a> 4. Admin login</h3>
+                <p>You can do an admin login by accessing the given URL.</p>
+                <p><code>YOUR_APP_URL/login</code></p>
+                <p><strong>email:</strong> admin@infycrm.com <br>
+                    <strong>password:</strong> 123456</p>
+                <p>And you are ready to go.</p>
+                <h2 id="setup-infycrm-into-local-environment"><a href="#setup-infycrm-into-local-environment"
+                                                                 class="header-anchor">#</a> Setup InfyCRM into Local
+                    Environment</h2>
+                <p>You can setup InfyCRM into your local by using both zip files, but we recommend to use a dist file so
+                    you have to perform minimal steps.</p>
+                <p>Here are some steps to setup InfyCRM in your local environment :</p>
+                <h3 id="_1-install-xampp-wamp-if-you-don-t-have-it"><a
+                        href="#_1-install-xampp-wamp-if-you-don-t-have-it" class="header-anchor">#</a> 1. Install
+                    xampp/wamp (if you don't have it).</h3>
+                <h3 id="_2-create-folder-infycrm"><a href="#_2-create-folder-infycrm" class="header-anchor">#</a> 2.
+                    Create folder <code>InfyCRM</code></h3>
+                <ul>
+                    <li>if you are using wamp then create InfyCRM folder under you_path_to_wamp/www/</li>
+                    <li>if you are using xamp then create InfyCRM folder under you_path_to_xamp/htdocs/</li>
+                </ul>
+                <h3 id="_3-unzip-dist-zip-to-infycrm-folder"><a href="#_3-unzip-dist-zip-to-infycrm-folder"
+                                                                class="header-anchor">#</a> 3. Unzip dist.zip to InfyCRM
+                    folder</h3>
+                <h3 id="_4-point-the-domain-to-the-uploaded-folder"><a
+                        href="#_4-point-the-domain-to-the-uploaded-folder" class="header-anchor">#</a> 4. Point the
+                    domain to the uploaded folder</h3>
+                <p>You need to create a virtual host first to setup InfyCRM. You can find steps here to create a virtual
+                    host.</p>
+                <ul>
+                    <li>You can find steps <a
+                            href="https://medium.com/d6-digital/create-virtual-host-for-apache-on-windows-10-by-using-xampp-8664b0427567"
+                            target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg"
+                                                                                     aria-hidden="true"
+                                                                                     focusable="false" x="0px" y="0px"
+                                                                                     viewBox="0 0 100 100" width="15"
+                                                                                     height="15" class="icon outbound"><path
+                            fill="currentColor"
+                            d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
+                            fill="currentColor"
+                            points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span
+                            class="sr-only">(opens new window)</span></span></a> to create a virtual host on
+                        <code>XAMPP</code>.
+                    </li>
+                    <li>You can find steps <a
+                            href="http://codedecode.co.in/blog/wordpress/set-up-virtual-host-with-wamp/" target="_blank"
+                            rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg"
+                                                                     aria-hidden="true" focusable="false" x="0px"
+                                                                     y="0px" viewBox="0 0 100 100" width="15"
+                                                                     height="15" class="icon outbound"><path
+                            fill="currentColor"
+                            d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
+                            fill="currentColor"
+                            points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span
+                            class="sr-only">(opens new window)</span></span></a> to create a virtual host on
+                        <code>WAMP</code>.
+                    </li>
+                </ul>
+                <p>Point your domain or subdomain to the InfyCRM folder.</p>
+                <p>Please note that InfyCRM must be installed on a primary domain or subdomain. Installing on a
+                    sub-folder will not work, for example:</p>
+                <div class="language- extra-class"><pre><code>    example.com/InfyCRM (Invalid)
+    localhost/InfyCRM (Invalid) if you are putting it in a subfolder or root website)
+    example.com (Valid)
+    local.InfyCRM.com (Valid)
+    InfyCRM.test (Valid)
+</code></pre>
+                </div>
+                <p>Open the link to the domain in the browser (Example: https://local.InfyCRM.com).</p>
+                <h2 id="key-features-and-concepts"><a href="#key-features-and-concepts" class="header-anchor">#</a> Key
+                    Features and Concepts</h2>
+                <p>Here are some Key Features and Concepts that InfyCRM provides.</p>
+                <h2 id="multi-languages-support"><a href="#multi-languages-support" class="header-anchor">#</a>
+                    Multi-languages Support</h2>
+                <p>We are supporting 9 languages,</p>
+                <ul>
+                    <li>English</li>
+                    <li>Spanish</li>
+                    <li>French</li>
+                    <li>German</li>
+                    <li>Russian</li>
+                    <li>Portuguese</li>
+                    <li>Arabic</li>
+                    <li>Chinese</li>
+                    <li>Turkish</li>
+                </ul>
+                <h2 id="admin-panel"><a href="#admin-panel" class="header-anchor">#</a> Admin Panel</h2>
+                <h3 id="dashboard"><a href="#dashboard" class="header-anchor">#</a> Dashboard</h3>
+                <p>Beautiful visual dashboard for an admin to have a full overview of a whole system with all the
+                    statistics you need.</p>
+                <ol>
+                    <li>Invoices - How many invoices drafted, unpaid, paid, etc.</li>
+                    <li>Estimates - How many estimates were sent, declined, accepted, etc.</li>
+                    <li>Proposals - How many proposals open, revised, accepted, etc.</li>
+                    <li>Projects - How many projects started, not-started, finished, etc.</li>
+                    <li>Members - Active members of the system.</li>
+                </ol>
+                <h3 id="customers"><a href="#customers" class="header-anchor">#</a> Customers</h3>
+                <p>Customers are actually a company, they can manage their personal details like,</p>
+                <ul>
+                    <li>Contacts</li>
+                    <li>Notes</li>
+                    <li>Reminders</li>
+                    <li>Tasks</li>
+                    <li>Projects</li>
+                    <li>Tickets</li>
+                    <li>Invoices</li>
+                    <li>Proposals</li>
+                    <li>Estimates</li>
+                    <li>Credit notes</li>
+                </ul>
+                <h3 id="members"><a href="#members" class="header-anchor">#</a> Members</h3>
+                <p>Members in CRM are the users who are responsible to lead the conversation and many other activities.
+                    Admin can create members with different permissions.</p>
+                <h3 id="articles"><a href="#articles" class="header-anchor">#</a> Articles</h3>
+                <p>Admin or users who have permission to create Articles can create articles. Admin should be able to
+                    edit/delete all articles while the other users can see only his articles.</p>
+                <h3 id="tags"><a href="#tags" class="header-anchor">#</a> Tags</h3>
+                <p>You can see the list of all tags used in all projects, proposals, estimates, tasks, etc. You can
+                    create new tags from here and can edit and delete existing ones.</p>
+                <h3 id="leads"><a href="#leads" class="header-anchor">#</a> Leads</h3>
+                <p>Leads are actually the customer's who not yet did any deal with the company.</p>
+                <p>You can see the lead through the Kanban view and move that lead from one status to another status.
+                    And create leads and edited and delete existing ones. Lead can also be filtered according to lead
+                    status. lead can be assigned to the member.</p>
+                <p>Once Lead is ready to deal with a company you can convert a lead to a customer.</p>
+                <h3 id="projects"><a href="#projects" class="header-anchor">#</a> Projects</h3>
+                <p>Each project must have an associated with the customer and members. You can create a new project from
+                    here and can edit and delete existing ones. You can create a project by giving the billing type
+                    option, an option like, fix rate, project hours, task hours.</p>
+                <h3 id="tasks"><a href="#tasks" class="header-anchor">#</a> Tasks</h3>
+                <p>Once the project is started, all we need to do is define tasks. The task may have,</p>
+                <ul>
+                    <li>Subject</li>
+                    <li>Hourly rate</li>
+                    <li>Assigned Date</li>
+                    <li>Due Date</li>
+                    <li>Priority</li>
+                    <li>Related to</li>
+                    <li>Tags</li>
+                    <li>Description</li>
+                </ul>
+                <p>You can also assign a task to team members if you need them. You can select the option which has a
+                    related task such as invoice, customer, ticket, project, lead, proposal, etc.</p>
+                <h3 id="tickets"><a href="#tickets" class="header-anchor">#</a> Tickets</h3>
+                <p>Admin or user who has permission to create tickets can manage the tickets module. you can create a
+                    ticket to track some customer requests.</p>
+                <p>Tickets without Contact and Ticket to Contact, these two options can be used to create a ticket. You
+                    can assign tickets to your member priority-wise, and the user also able to attach files to the
+                    ticket.</p>
+                <h2 id="sales"><a href="#sales" class="header-anchor">#</a> Sales</h2>
+                <h3 id="invoices"><a href="#invoices" class="header-anchor">#</a> Invoices</h3>
+                <p>You can create an invoice from the product you have added to the product module. you can directly
+                    assign the invoice to the client. you can manually add the item to the invoice. You can also
+                    download the PDF of the invoice and send it to the client.</p>
+                <p>There are many options available for invoice creation, one of them is Discount type. we are
+                    supporting 2 discount type options.</p>
+                <ul>
+                    <li>Before Tax</li>
+                    <li>After-Tax</li>
+                </ul>
+                <p>By using the before tax option, your discount will be applied to invoice subtotal before applying the
+                    tax of the item.</p>
+                <p>By using the after-tax option, your discount will be applied to invoice subtotal which is actually
+                    included the tax too.</p>
+                <p>You can also change the invoice status to paid by paying the full amount. If you don't want to pay
+                    the full amount then it will be considered as partially paid.</p>
+                <h3 id="credit-notes"><a href="#credit-notes" class="header-anchor">#</a> Credit Notes</h3>
+                <p>You can create a credit note from the product you have added to the product module. You can manually
+                    add the item to the credit note.</p>
+                <h3 id="proposals"><a href="#proposals" class="header-anchor">#</a> Proposals</h3>
+                <p>You can create a proposal from the product you have added to the product module. you can manually add
+                    the item to the proposal. You can also convert the proposal directly into an invoice and
+                    estimate.</p>
+                <h3 id="estimates"><a href="#estimates" class="header-anchor">#</a> Estimates</h3>
+                <p>You can create an estimate from the product you have added to the product module. You can manually
+                    add the item to the estimate. you can directly assign the invoice to the client. You can also
+                    convert the estimate directly into an invoice.</p>
+                <h3 id="invoice-payments"><a href="#invoice-payments" class="header-anchor">#</a> Invoice Payments</h3>
+                <p>Invoice data show invoices you have paid and invoices that have been partially paid.</p>
+                <h3 id="departments"><a href="#departments" class="header-anchor">#</a> Departments</h3>
+                <p>Departments are useful when you need to divide tickets department-wise. Like the Finance Department,
+                    Marketing Department, Purchase Department, etc. You can create a new department from here and can
+                    edit and delete existing ones.</p>
+                <h3 id="expenses"><a href="#expenses" class="header-anchor">#</a> Expenses</h3>
+                <p>By using this module you can record your expense category and amount. you can store it with a
+                    specific customer, currency, payment mode, expense date and attach a document related to it.</p>
+                <h3 id="payment-modes"><a href="#payment-modes" class="header-anchor">#</a> Payment Modes</h3>
+                <p>When you pay for an invoice, you can easily make a payment using the payment mode. You can create a
+                    new payment mode from here and also can edit and delete existing ones.</p>
+                <h3 id="tax-rates"><a href="#tax-rates" class="header-anchor">#</a> Tax Rates</h3>
+                <p>Taxes are used while creating invoices, estimates, proposals, products. You can create taxes with its
+                    amount here.</p>
+                <h3 id="products"><a href="#products" class="header-anchor">#</a> Products</h3>
+                <p>Create and manage your business products from here. You will be able to create invoices, proposals,
+                    and estimates from the created product. And you can also manage that product group wise.</p>
+                <h3 id="announcements"><a href="#announcements" class="header-anchor">#</a> Announcements</h3>
+                <p>Create the announcement that you want to show to the client-side, and you can also change the status
+                    of that announcement if you do not want to show the announcement.</p>
+                <p>We have added cron for announcements, so it will be auto-published at a given time.</p>
+                <h3 id="contracts"><a href="#contracts" class="header-anchor">#</a> Contracts</h3>
+                <p>You can create a contract with the contract type and contract amount. And also assign the contract to
+                    the customer. You can also create a contract from here and also can edit and delete existing
+                    ones.</p>
+                <h3 id="goals"><a href="#goals" class="header-anchor">#</a> Goals</h3>
+                <p>Once a goal has been created, the goal is dynamically tracked and the goal will be tracked based on
+                    the goal type you have selected. Goals will be fully tracked from the start date and end date.</p>
+                <p>We are supporting some default goal types.
+                    e.g Convert x Leads, Paid x Invoices, etc.</p>
+                <h3 id="services"><a href="#services" class="header-anchor">#</a> Services</h3>
+                <p>You can create a new service from here and can edit and delete existing ones.</p>
+                <h3 id="settings"><a href="#settings" class="header-anchor">#</a> Settings</h3>
+                <p>InfyCRM provides various settings to control your branding and other general items.</p>
+                <ul>
+                    <li>Application Name</li>
+                    <li>Term &amp; Conditions</li>
+                    <li>Company Logo</li>
+                    <li>Favicon Icon</li>
+                    <li>Company Name</li>
+                    <li>Company Email</li>
+                    <li>Company Phone</li>
+                    <li>Company Address</li>
+                    <li>Company City, State</li>
+                    <li>Admin Note</li>
+                    <li>Client Note</li>
+                </ul>
+                <h2 id="client-panel"><a href="#client-panel" class="header-anchor">#</a> Client panel</h2>
+                <h3 id="dashboard-2"><a href="#dashboard-2" class="header-anchor">#</a> Dashboard</h3>
+                <p>Dashboard for the client have a full view of their own information &amp; usage, the client can
+                    visualize their own projects status, total amount counts for Invoices, Proposals &amp; Estimates
+                    with its needed statuses.</p>
+                <h3 id="invoices-2"><a href="#invoices-2" class="header-anchor">#</a> Invoices</h3>
+                <p>The client can visualize their own created invoices and see their invoiced detail, Invoices statuses
+                    &amp; can visualize the paid/unpaid, invoices progress bar, which is created by Admin.</p>
+                <h3 id="proposals-2"><a href="#proposals-2" class="header-anchor">#</a> Proposals</h3>
+                <p>The client can visualize their own created proposals and see their proposals in detail, proposals
+                    statuses &amp; can visualize the open/revised/accepted, proposals progress bar, which is created by
+                    Admin.</p>
+                <h3 id="contracts-2"><a href="#contracts-2" class="header-anchor">#</a> Contracts</h3>
+                <p>The client can visualize their own contracts in which you can see the detailing of contract
+                    information Which is created by Admin.</p>
+                <h3 id="estimates-2"><a href="#estimates-2" class="header-anchor">#</a> Estimates</h3>
+                <p>The client can visualize their own created estimates and see their estimates detail, estimates
+                    statuses &amp; can visualize the sent /accepted/ declined/expired estimates progress bar, which is
+                    created by Admin.</p>
+                <h3 id="announcements-2"><a href="#announcements-2" class="header-anchor">#</a> Announcements</h3>
+                <p>The client can visualize their own created announcement in which the client can visualize their
+                    messages with date/time. Which is created by Admin.</p></div>
+            <footer class="page-edit"><!----> <!----></footer> <!----> </main>
+    </div>
+    <div class="global-ui"></div>
+</div>
+<script src="../js/styles.js" defer></script>
+<script src="../js/2.js" defer></script>
+<script src="../js/10.js" defer></script>
+</body>
+</html>
